@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Hello VueJS </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Hello VueJS - REST Example</h1>
+<p><a href="index.html">Simple VueJSExample</a></p>
+<p>If you see "hello world" and a table of names and emails it works!</p>
+
+<div id="app">
+    <p>{{message}}</p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        <tr v-for="obj in list">
+            <td>{{obj.name}}</td>
+            <td>{{obj.email}}</td>
+        </tr>
+    </table>
+</div>
+
+<script src="node_modules/vue/dist/vue.min.js"></script>
+<script src="app/app2.js"></script>
+
+</body>
+</html>

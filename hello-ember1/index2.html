@@ -1,0 +1,38 @@
+<html>
+<head>
+    <title>Hello Ember REST Example</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<h1>Hello Ember REST Example</h1>
+<p><a href="index.html">Basic Ember Example</a></p>
+<p>If you see "hello world" and a table of names and emails it works!</p>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/handlebars/handlebars.js"></script>
+<script src="bower_components/ember/ember.js"></script>
+<script src="bower_components/ember-data/ember-data.js"></script>
+<script src="bower_components/ember/ember-template-compiler.js"></script>
+<script src="app2.js"></script>
+
+
+<script type="text/x-handlebars" data-template-name='index'>
+  <p>hello world</p>
+   <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+{{#each model.list as |item|}}
+        <tr>
+            <td>{{item.name}}</td>
+            <td>{{item.email}}</td>
+        </tr>
+{{/each}}
+    </table>
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "author": "Scott Preston ",
+  "name": "hello-react-iso",
+  "description": "simple app to sho wreact isomorphic",
+  "version": "0.0.1",
+  "scripts": {
+    "prestart": "jsx index.jsx > index.js",
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "react": "^0.14.7"
+  },
+  "devDependencies": {
+    "react-tools": "^0.13.3"
+  }
+}

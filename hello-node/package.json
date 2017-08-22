@@ -1,0 +1,13 @@
+{
+  "author": "Scott Preston",
+  "name": "hello-node",
+  "description": "a sample project for getting started with ember1",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.13.4",
+    "express-handlebars": "^3.0.0"
+  }
+}

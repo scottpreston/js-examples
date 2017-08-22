@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title>Hello Angular 1</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body ng-app="hello-angular">
+<h1>Hello Angular 1 - REST Example</h1>
+<p><a href="index.html">Simple Angular 1 Example</a></p>
+<p>If you see "hello world" and a table of names and emails it works!</p>
+
+<div ng-controller="HelloController">
+    <p>{{hello}}</p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+        </tr>
+        <tr ng-repeat="obj in model.list">
+            <td>{{obj.name}}</td>
+            <td>{{obj.email}}</td>
+        </tr>
+    </table>
+</div>
+
+<script src="node_modules/angular/angular.min.js"></script>
+<script src="js/app2.js"></script>
+
+</body>
+</html>
